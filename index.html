@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahodadhi | The college magazine by Team Abhiyanta</title>
+  <meta name="description" content="Mahodadhi is the college magazine by Team Abhiyanta: stories, poems, illustrations, design and media in Marathi, Hindi and English.">
+  <meta name="theme-color" content="#061A33">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Hind:wght@400;500;600&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="ripples"><span></span><span></span><span></span><b>महोदधि</b></div>
+  </div>
+  <div id="progress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-mah" id="nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" aria-label="Mahodadhi home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#FFB300"/><path d="M5 22 q5 -7 10 0 t10 0 t10 0" fill="none" stroke="#061A33" stroke-width="3" stroke-linecap="round"/><path d="M5 29 q5 -7 10 0 t10 0 t10 0" fill="none" stroke="#061A33" stroke-width="3" stroke-linecap="round" opacity=".5"/><circle cx="26" cy="12" r="3.5" fill="#061A33"/></svg>
+        <span class="deva">अभियंता</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item mt-2 mt-lg-0"><a class="btn btn-mah px-4" href="magazine.html">View Magazine</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="home">
+    <div class="bubbles" aria-hidden="true"></div>
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <p class="hero-kicker reveal">Team Abhiyanta presents</p>
+          <h1 class="hero-title" aria-label="Mahodadhi">
+            <span class="outline" aria-hidden="true">महोदधि</span>
+            <span class="fill" aria-hidden="true">महोदधि</span>
+          </h1>
+          <p class="hero-en reveal" style="--d:.2s">Mahodadhi, the great ocean of ideas</p>
+          <p class="hero-lead reveal" style="--d:.35s">
+            Dive into an ocean of <span class="swap-word in" id="swapWord">कथा</span>
+            written, drawn and photographed by our students in Marathi, Hindi and English.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4 justify-content-center justify-content-lg-start reveal" style="--d:.5s">
+            <a href="magazine.html" class="btn btn-mah btn-lg px-4"><i class="bi bi-book-half me-2"></i>Read the magazine</a>
+            <a href="about.html" class="btn btn-ghost btn-lg px-4">Meet the team</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 400 400">
+              <g data-depth="14">
+                <circle cx="200" cy="190" r="110" fill="#FFB300"/>
+                <circle class="sun-ring" cx="200" cy="190" r="140" fill="none" stroke="#FFB300" stroke-width="2" stroke-dasharray="4 12" stroke-linecap="round"/>
+                <circle cx="200" cy="190" r="170" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+              </g>
+              <g class="boat" data-depth="-10">
+                <path d="M200 150 V305" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+                <path d="M206 160 L296 292 H206 Z" fill="#fff"/>
+                <path d="M194 190 L118 292 H194 Z" fill="#E9F7F5" opacity=".92"/>
+                <path d="M200 150 L226 158 L200 168 Z" fill="#F2634A"/>
+                <path d="M92 304 H312 L282 346 H122 Z" fill="#F2634A"/>
+                <path d="M110 318 H294" stroke="#061A33" stroke-width="4" stroke-linecap="round" opacity=".35"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#inside" class="scroll-cue" aria-label="Scroll to sections"><i class="bi bi-chevron-double-down"></i></a>
+    <div class="waves" aria-hidden="true"><div class="wave w1"></div><div class="wave w2"></div><div class="wave w3"></div></div>
+  </header>
+
+  <!-- ===== QUOTE MARQUEE ===== -->
+  <div class="marquee" aria-label="Quotes from Mahodadhi">
+    <div class="marquee-track">
+      <span class="deva"><i class="bi bi-water"></i> प्रत्येक लाट नवी गोष्ट घेऊन येते.</span>
+      <span class="deva"><i class="bi bi-water"></i> हर लहर में एक कहानी है।</span>
+      <span><i class="bi bi-water"></i> Every wave carries a story ashore.</span>
+      <span class="deva"><i class="bi bi-water"></i> शब्दांच्या समुद्रात आपण सगळे थेंब.</span>
+      <span class="deva"><i class="bi bi-water"></i> लिखो, रंगो, रचो।</span>
+      <span><i class="bi bi-water"></i> Write it, draw it, shoot it.</span>
+      <!-- duplicate for seamless loop -->
+      <span class="deva" aria-hidden="true"><i class="bi bi-water"></i> प्रत्येक लाट नवी गोष्ट घेऊन येते.</span>
+      <span class="deva" aria-hidden="true"><i class="bi bi-water"></i> हर लहर में एक कहानी है।</span>
+      <span aria-hidden="true"><i class="bi bi-water"></i> Every wave carries a story ashore.</span>
+      <span class="deva" aria-hidden="true"><i class="bi bi-water"></i> शब्दांच्या समुद्रात आपण सगळे थेंब.</span>
+      <span class="deva" aria-hidden="true"><i class="bi bi-water"></i> लिखो, रंगो, रचो।</span>
+      <span aria-hidden="true"><i class="bi bi-water"></i> Write it, draw it, shoot it.</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== WHAT'S INSIDE ===== -->
+    <section class="section" id="inside">
+      <div class="container">
+        <div class="sec-head reveal">
+          <h2>What's inside Mahodadhi</h2>
+          <span class="squiggle"></span>
+          <p>Six sections, three languages, one issue. Every page is made by students.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal" style="--d:.0s">
+            <article class="sec-card" style="--c:var(--coral)" data-tilt="6">
+              <div class="icon"><i class="bi bi-feather"></i></div>
+              <h3 class="deva">मराठी</h3>
+              <div class="sub">Marathi</div>
+              <p>कविता, कथा आणि ललित लेख. मायबोलीतले आपले स्वतःचे शब्द.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="--d:.1s">
+            <article class="sec-card" style="--c:var(--marigold)" data-tilt="6">
+              <div class="icon" style="color:var(--abyss)"><i class="bi bi-pencil-square"></i></div>
+              <h3 class="deva">हिन्दी</h3>
+              <div class="sub" style="color:#B67F00">Hindi</div>
+              <p>कविताएँ, कहानियाँ और व्यंग्य। दिल की बात, अपनी भाषा में।</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="--d:.2s">
+            <article class="sec-card" style="--c:var(--lagoon)" data-tilt="6">
+              <div class="icon"><i class="bi bi-journal-text"></i></div>
+              <h3>English</h3>
+              <div class="sub">अंग्रेज़ी</div>
+              <p>Essays, short fiction, interviews and campus features.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="--d:.0s">
+            <article class="sec-card" style="--c:var(--violet)" data-tilt="6">
+              <div class="icon"><i class="bi bi-palette2"></i></div>
+              <h3>Illustration</h3>
+              <div class="sub">चित्रकला</div>
+              <p>Sketches, digital art, comics and doodles that tell stories without words.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="--d:.1s">
+            <article class="sec-card" style="--c:var(--rose)" data-tilt="6">
+              <div class="icon"><i class="bi bi-vector-pen"></i></div>
+              <h3>Design</h3>
+              <div class="sub">रचना</div>
+              <p>Layouts, covers, typography and posters that give the magazine its look.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal" style="--d:.2s">
+            <article class="sec-card" style="--c:var(--tide)" data-tilt="6">
+              <div class="icon"><i class="bi bi-camera-reels"></i></div>
+              <h3>Media</h3>
+              <div class="sub">माध्यम</div>
+              <p>Photography, video stories and reels from events across the campus.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="section section-dark">
+      <div class="bubbles" aria-hidden="true"></div>
+      <div class="container position-relative" style="z-index:2">
+        <div class="sec-head reveal">
+          <h2>A magazine in numbers</h2>
+          <span class="squiggle gold"></span>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-lg-3 reveal"><div class="stat"><div class="num" data-count="3">0</div><div class="lbl">Languages</div></div></div>
+          <div class="col-6 col-lg-3 reveal" style="--d:.1s"><div class="stat"><div class="num" data-count="6">0</div><div class="lbl">Sections</div></div></div>
+          <div class="col-6 col-lg-3 reveal" style="--d:.2s"><div class="stat"><div class="num" data-count="18">0</div><div class="lbl">Student editors</div></div></div>
+          <div class="col-6 col-lg-3 reveal" style="--d:.3s"><div class="stat"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">Made by students</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LATEST ISSUE ===== -->
+    <section class="section" id="issue">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6 reveal left">
+            <div class="cover-scene">
+              <div class="cover3d" data-tilt="14" aria-hidden="true">
+                <div class="sun"></div>
+                <small>Team Abhiyanta</small>
+                <div class="deva">महोदधि</div>
+                <small>Volume 1, Issue 1</small>
+                <div class="waves"><div class="wave w1"></div><div class="wave w2"></div><div class="wave w3"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal right">
+            <h2 class="fw-bold display-5 text-center text-lg-start" style="color:var(--abyss)">Issue 01 is ready to flip through</h2>
+            <span class="squiggle mx-auto mx-lg-0 ms-lg-0" style="margin-left:0"></span>
+            <p class="fs-5 text-center text-lg-start" style="color:var(--muted)">
+              Open the prototype viewer, turn the pages with a click, a swipe or your arrow keys, and jump straight to the section you want.
+            </p>
+            <div class="mb-4 text-center text-lg-start">
+              <span class="pill deva">मराठी</span><span class="pill deva">हिन्दी</span><span class="pill">English</span>
+              <span class="pill">Illustration</span><span class="pill">Design</span><span class="pill">Media</span>
+            </div>
+            <div class="text-center text-lg-start">
+              <a href="magazine.html" class="btn btn-ink btn-lg px-4"><i class="bi bi-book me-2"></i>View magazine</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SUBMIT YOUR WORK ===== -->
+    <section class="section section-white" id="submit">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 reveal left">
+            <h2 class="fw-bold display-6" style="color:var(--abyss)">Send your work in a bottle</h2>
+            <span class="squiggle" style="margin-left:0"></span>
+            <p class="fs-5" style="color:var(--muted)">Poem, story, sketch, photograph or layout idea? Drop it in. The team reads every message.</p>
+            <div class="bottle-note"><i class="bi bi-envelope-paper"></i><div><b>Email</b><br>mahodadhi@yourcollege.edu.in</div></div>
+            <div class="bottle-note"><i class="bi bi-instagram"></i><div><b>Instagram</b><br>@mahodadhi.abhiyanta</div></div>
+          </div>
+          <div class="col-lg-7 reveal right">
+            <form class="form-card needs-validation" id="submitForm" novalidate>
+              <div class="alert alert-success d-none" id="formOk" role="status">
+                <i class="bi bi-check-circle-fill me-2"></i>Your message is in the bottle. Team Abhiyanta will reply soon.
+              </div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="fName" class="form-label">Your name</label>
+                  <input type="text" class="form-control" id="fName" placeholder="e.g. Sakshi Deshpande" required minlength="2">
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="fEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="fEmail" placeholder="you@example.com" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-12">
+                  <label for="fSection" class="form-label">Section</label>
+                  <select class="form-select" id="fSection" required>
+                    <option value="" selected disabled>Choose a section</option>
+                    <option>Marathi (मराठी)</option>
+                    <option>Hindi (हिन्दी)</option>
+                    <option>English</option>
+                    <option>Illustration</option>
+                    <option>Design</option>
+                    <option>Media</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose a section.</div>
+                </div>
+                <div class="col-12">
+                  <label for="fMsg" class="form-label">Your message or link</label>
+                  <textarea class="form-control" id="fMsg" rows="4" placeholder="Paste your piece or a Drive link here" required minlength="10"></textarea>
+                  <div class="invalid-feedback">Please write at least 10 characters.</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-mah btn-lg px-4"><i class="bi bi-send me-2"></i>Send to Team Abhiyanta</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="waves" aria-hidden="true"><div class="wave wd1"></div><div class="wave wd2"></div></div>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="deva">महोदधि</div>
+          <p class="mt-2 mb-3" style="max-width:26rem">The college magazine by Team Abhiyanta. Written, drawn and photographed by students.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 offset-lg-1">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="magazine.html">View Magazine</a></li>
+            <li><a href="index.html#submit">Send your work</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="about.html#team" class="deva">मराठी</a></li>
+            <li><a href="about.html#team" class="deva">हिन्दी</a></li>
+            <li><a href="about.html#team">English</a></li>
+            <li><a href="about.html#team">Illustration, Design, Media</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <span>&copy; <span id="year">2026</span> Team Abhiyanta. All rights reserved.</span>
+        <span>Made with <i class="bi bi-heart-fill text-danger"></i> by students</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
